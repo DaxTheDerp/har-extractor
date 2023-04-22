@@ -104,7 +104,10 @@ def get_entry_path(entry, subdirs=False):
     except KeyError:
         raise ValueError('Invalid entry: missing request URL: %s' % repr(entry))
 
-    fname = url.path.strip('/')
+    # Remove query part from the path
+    path_without_query = url.path.split('?')[0]
+
+    fname = path_without_query.strip('/')
     if fname == '':
         fname = 'index.html'
 
