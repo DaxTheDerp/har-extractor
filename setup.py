@@ -16,7 +16,7 @@ except IOError:
 
 setup(
     name='har-extractor',
-    version='1.0.1',
+    version='1.1.1',  # Update the version to reflect your changes
     description='HTTP Archive extractor',
     long_description=README,
     classifiers=[
@@ -31,9 +31,9 @@ setup(
         'Topic :: Utilities'
     ],
     keywords='har http archive extractor',
-    url='https://github.com/dead-beef/har-extractor',
-    author='dead-beef',
-    author_email='contact@dead-beef.tk',
+    url='https://github.com/DaxTheDerp/har-extractor',  # Update with your fork's URL
+    author='DaxTheDerp',  # Update with your name
+    author_email='oofman.theoofer@gmail.com',  # Update with your email
     license='MIT',
     py_modules=['har_extractor'],
     entry_points={
